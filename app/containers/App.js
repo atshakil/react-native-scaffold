@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Provider, connect } from 'react-redux';
 import { addNavigationHelpers } from 'react-navigation';
-import AppNavigator from '../navigators/App';
 import store from '../store';
+import AppNavigator from '../navigators/App';
 
 @connect(
   state => ({

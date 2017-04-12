@@ -1,4 +1,6 @@
 import { StackNavigator } from 'react-navigation';
-import { App } from '../config/routes';
+import AppRoute from '../config/routes/App';
 
-export default StackNavigator(App);
+export default StackNavigator(AppRoute, {
+  headerMode: 'screen'
+});

@@ -1,1 +1,11 @@
-export { default as Primary } from './Primary';
+export { default as S1 } from './S1';
+export { default as S2 } from './S2';
+export { default as S3 } from './S3';
+export { default as S4 } from './S4';
+export { default as S5 } from './S5';
+export { default as S6 } from './S6';
+export { default as S7 } from './S7';
+export { default as S8 } from './S8';
+export { default as T1 } from './T1';
+export { default as T2 } from './T2';
+export { default as T3 } from './T3';
