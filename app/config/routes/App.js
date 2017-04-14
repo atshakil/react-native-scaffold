@@ -1,4 +1,4 @@
-import { S1, S2 } from '../../components';
+import { S1, S2, S3 } from '../../components';
 import TabGroupANavigator from '../../navigators/TabGroupA';
 import SettingsNavigator from '../../navigators/Settings';
 
@@ -16,5 +16,6 @@ export default {
     navigationOptions: {
       headerVisible: false
     }
-  }
+  },
+  S3: {screen: S3}
 };
