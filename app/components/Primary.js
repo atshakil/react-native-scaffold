@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
-import { Text } from 'react-native';
-import I18n from 'react-native-i18n';
+import { View, Text, Button } from 'react-native';
+import FontAwesome from 'react-native-vector-icons/FontAwesome';
 
 export default class Primary extends Component {
   render() {
     return (
-      <Text>{I18n.t('greetings')}</Text>
+      <View>
+        <Text>Hey</Text>
+        <FontAwesome name="rocket" size={30} color="#900" />
+      </View>
     );
   }
 }
