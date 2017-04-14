@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, PropTypes } from 'react';
 import { Provider, connect } from 'react-redux';
 import { addNavigationHelpers } from 'react-navigation';
 import i18n from 'react-native-i18n';
@@ -30,7 +30,12 @@ class App extends Component {
   }
 }
 
-export default () =>
+App.propTypes = {
+  nav: PropTypes.object.isRequired,
+  dispatch: PropTypes.func.isRequired
+};
+
+export default () => // eslint-disable-line
   <Provider store={store}>
     <App />
-  </Provider>
+  </Provider>;

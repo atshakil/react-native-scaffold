@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Text, Button } from 'react-native';
+import { View, Text } from 'react-native';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 
 export default class Primary extends Component {
