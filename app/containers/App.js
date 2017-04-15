@@ -31,8 +31,8 @@ class App extends Component {
 }
 
 App.propTypes = {
-  nav: PropTypes.object.isRequired,
-  dispatch: PropTypes.func.isRequired
+  nav: PropTypes.object,
+  dispatch: PropTypes.func
 };
 
 export default () => // eslint-disable-line
