@@ -42,6 +42,8 @@ Now, change CWD to project root and install dependency modules.
 $ npm install
 ```
 
+Create a gradle property file by renaming `gradle.properties.example` as `gradle.properties` (located in `android/`)
+
 #### Development
 Create a configuration file by copying `application.json.example` as `application.json` (located in `app/config`)
 
@@ -59,6 +61,28 @@ $ react-native run-ios
 ```
 
 #### Production
+
+##### Android
+
+Create a keystore for the production app signing. You may update the available parameters (e.g. keystore name, alias, validity) to fit your requirement.
+
+```
+keytool -genkey -v -keystore primary-release-key.keystore -alias keystore_alias -keyalg RSA -keysize 2048 -validity 10000
+```
+
+Now copy the keystore file to `android/app` directory.
+
+In the global `gradle.properties` file (located in `android/` directory), update the `STORE_PASSWORD`, `KEY_PASSWORD`, `KEY_ALIAS` and `STORE_FILE` parameter with your keystore parameters.
+
+Finally generate the release build using,
+
+```
+react-native run-android --flavor=release
+```
+
+which generates a release apk in `android/app/build/outputs/apk` directory.
+
+##### iOS
 
 TODO
 

@@ -18,3 +18,8 @@
 # org.gradle.parallel=true
 
 android.useDeprecatedNdk=true
+
+STORE_PASSWORD=PASSWORD
+KEY_PASSWORD=PASSWORD
+KEY_ALIAS=ALIAS
+STORE_FILE=primary-release-key.keystore

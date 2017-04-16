@@ -55,3 +55,4 @@ fastlane/screenshots
 # RNS Specific
 
 app/config/application.json
+android/gradle.properties
