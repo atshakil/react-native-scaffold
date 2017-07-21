@@ -60,6 +60,13 @@ $ react-native run-android
 $ react-native run-ios
 ```
 
+One way of logging is to use any of the following commands
+
+```sh
+$ react-native log-android
+$ react-native log-ios
+```
+
 #### Production
 
 ##### Android
