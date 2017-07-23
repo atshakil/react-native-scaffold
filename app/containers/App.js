@@ -17,6 +17,7 @@ i18n.locale = "en";
     nav: state.nav
   }),
   dispatch => ({
+    dispatch,
     initiatePushNotification() {
       PushNotification.configure({
         onNotification(notification) {
