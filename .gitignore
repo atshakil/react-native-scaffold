@@ -56,3 +56,5 @@ fastlane/screenshots
 
 app/config/application.json
 android/gradle.properties
+
+google-services.json
