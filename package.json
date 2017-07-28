@@ -14,8 +14,8 @@
   },
   "dependencies": {
     "http-status": "^1.0.1",
-    "react": "16.0.0-alpha.6",
-    "react-native": "0.43.3",
+    "react": "16.0.0-alpha.12",
+    "react-native": "^0.47.1",
     "react-native-i18n": "^1.0.0",
     "react-native-vector-icons": "^4.0.1",
     "react-navigation": "git+https://github.com/react-community/react-navigation.git",
