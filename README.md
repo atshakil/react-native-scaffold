@@ -7,6 +7,7 @@ A React Native scaffod featuring Redux and React Navigation
 - [Redux](https://github.com/reactjs/redux)
 - [React Navigation](https://github.com/react-community/react-navigation)
 - [React Native i18n](https://github.com/AlexanderZaytsev/react-native-i18n)
+- [React Native FCM](https://github.com/evollu/react-native-fcm)
 - [React Native Vector Icons](https://github.com/oblador/react-native-vector-icons)
 - [ESLint](https://github.com/eslint/eslint)
 - [Node HTTP Status](https://github.com/adaltas/node-http-status)
@@ -43,6 +44,30 @@ $ npm install
 ```
 
 Create a gradle property file by renaming `gradle.properties.example` as `gradle.properties` (located in `android/`)
+
+##### FCM Support
+
+###### Android
+
+FCM requires a configuration file (`google-services.json`) to work. In order to
+get the file, follow the steps bellow.
+
+- Go to your project in [https://console.firebase.google.com](https://console.firebase.google.com), or create one.
+- Now, from project Settings > General > Your apps, use "Add APP" to add an
+android app to the project
+- `google-services.json` will now be available for download
+
+###### iOS
+
+TODO
+
+Once the FCM configuration file is added, app will start to receive notifications
+without the necessity of taking any further step. But, if the app requires
+advanced feature like Android `click_action`, then some [additional
+configuration](https://github.com/evollu/react-native-fcm#config-for-notification-and-click_action-in-android) will be required.
+
+For a more detailed configuration instruction, please visit the FCM module
+[documentation](https://github.com/evollu/react-native-fcm#configure-firebase-console).
 
 #### Development
 Create a configuration file by copying `application.json.example` as `application.json` (located in `app/config`)
